@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="395.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctlr.CTLMain">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="399.0" prefWidth="697.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="LDescr" layoutX="331.0" layoutY="39.0" text="DEFDESCR" />
+            <Label fx:id="LLongtitude" layoutX="332.0" layoutY="85.0" text="DEFLONG" />
+            <TextField fx:id="TXTLong" layoutX="506.0" layoutY="81.0" />
+            <TextField fx:id="TXTLat" accessibleRoleDescription="1g" layoutX="506.0" layoutY="107.0" />
+            <CheckBox fx:id="CHKCloud" layoutX="514.0" layoutY="157.0" mnemonicParsing="false" text="DEFDOWNLCHK" />
+            <TextField fx:id="TXTScale" layoutX="506.0" layoutY="191.0" />
+            <TextField fx:id="TXTDate" layoutX="506.0" layoutY="239.0" />
+            <TextField fx:id="TXTRDataSet" editable="false" layoutX="119.0" layoutY="277.0" />
+            <Label fx:id="LLatitude" layoutX="332.0" layoutY="111.0" text="DEFLAT" />
+            <ImageView fx:id="IVEarth" fitHeight="174.0" fitWidth="189.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="LDate" layoutX="329.0" layoutY="238.0" text="DEFDAT:" />
+            <MenuBar layoutY="-4.0" prefHeight="31.0" prefWidth="741.0">
+              <menus>
+                <Menu fx:id="MNLang" mnemonicParsing="false" text="DEFLANG">
+                     <items>
+                        <Menu fx:id="MLang" mnemonicParsing="false" text="Unspecified Menu">
+                          <items>
+                              <MenuItem fx:id="MISetPL" mnemonicParsing="false" text="Unspecified Action" />
+                              <MenuItem fx:id="MISetEN" mnemonicParsing="false" text="Unspecified Action" />
+                              <MenuItem fx:id="MISetUS" mnemonicParsing="false" text="Unspecified Action" />
+                          </items>
+                        </Menu>
+                        <RadioMenuItem fx:id="RMIUseProp" mnemonicParsing="false" text="Unspecified Action" />
+                     </items></Menu>
+              </menus>
+            </MenuBar>
+            <Label fx:id="LScale" layoutX="330.0" layoutY="195.0" text="DEFSCALE:" />
+            <Label fx:id="LRDataSet" layoutX="14.0" layoutY="281.0" text="DAFDS" />
+            <Button fx:id="BDownload" layoutX="541.0" layoutY="277.0" mnemonicParsing="false" text="DEFDOWNL" />
+            <TextField fx:id="TXTRDate" editable="false" layoutX="119.0" layoutY="227.0" />
+            <TextField fx:id="TXTRID" editable="false" layoutX="119.0" layoutY="252.0" />
+            <Label fx:id="LRID" layoutX="16.0" layoutY="256.0" text="DEFID" />
+            <TextField fx:id="TXTRService" editable="false" layoutX="119.0" layoutY="327.0" />
+            <TextField fx:id="TXTRPlanet" editable="false" layoutX="119.0" layoutY="302.0" />
+            <Label fx:id="LRService" layoutX="14.0" layoutY="331.0" text="DEFVRS" />
+            <Label fx:id="LRPlanet" layoutX="12.0" layoutY="306.0" text="DEFPLNT" />
+            <TextField fx:id="TXTRURL" editable="false" layoutX="119.0" layoutY="352.0" />
+            <Label fx:id="LRURL" layoutX="14.0" layoutY="356.0" text="DEFURL" />
+            <Label fx:id="LRDate" layoutX="12.0" layoutY="230.0" text="DEFDATE" />
+            <Label fx:id="LRClouds" layoutX="301.0" layoutY="356.0" text="DEFCLD" />
+            <TextField fx:id="TXTRClouds" editable="false" layoutX="359.0" layoutY="352.0" />
+            <Label fx:id="LCount" layoutX="329.0" layoutY="56.0" text="DEFLNC" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
